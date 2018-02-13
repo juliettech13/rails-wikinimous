@@ -1,0 +1,20 @@
+<div class="major_index_container">
+  <div class="title">
+    <h1>These are Hipster articles</h1>
+  </div>
+  <div class="container">
+    <%= @articles.each do |a| %>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+        <h2><%= link_to a.title, article_path(a) %></h2>
+        <p><%= a.content %></p>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
